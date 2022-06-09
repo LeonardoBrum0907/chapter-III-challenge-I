@@ -1,1 +1,56 @@
 // TODO
+
+.contentContainer {
+  width: 100%;
+
+  button {
+    border: none;
+    background: transparent;
+    color: var(--highlight);
+
+    margin-top: 2rem;
+  }
+
+  a {
+    display: block;
+
+    & + a {
+        margin-top: 2rem;
+    }
+
+    strong { 
+        display: block;
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        line-height: 2rem;
+        color: var(--heading);
+        transition: color 0.2s;
+
+        &:hover {
+          color: var(--highlight);
+        }
+    }
+
+    p {
+        color: var(--body);
+        margin-top: 0.5rem;
+        line-height: 1.625rem;
+    }
+
+    div {
+      width: 13.85rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--body);
+
+
+      span {
+        display: flex;
+        align-items: center;
+        font-size: 0.9rem;
+        margin-top: 1rem;
+      }
+    }
+  }
+}
