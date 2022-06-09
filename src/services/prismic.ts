@@ -12,6 +12,7 @@ export function getPrismicClient(config: PrismicConfig): prismic.Client {
   enableAutoPreviews({
     client,
     req: config.req,
+    accessToken: process.env.PRISMIC_ACCESS_TOKEN,
   })
 
   return client;
